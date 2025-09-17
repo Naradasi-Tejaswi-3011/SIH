@@ -1,0 +1,1564 @@
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:38:48'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:38:50'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:46:13'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:46:15'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:46:21'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:46:22'
+}
+{
+  message: 'New user registered: john.doe@example.com (patient)',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:46:22'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:51:02'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:51:04'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:51:17'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:51:18'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:51:29'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:51:35'
+}
+{
+  message: 'User logged in: admin@ayursutra.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 18:51:36'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:24'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:24'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:25'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 19:06:27'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:34'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:34'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:34'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:34'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:35'
+}
+{
+  message: 'User logged in: admin@ayursutra.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:35'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:35'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:41'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:46'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:52'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:54'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:06:59'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:07:03'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:07:09'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:07:09'
+}
+{
+  message: 'User logged in: admin@ayursutra.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:07:09'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:07:09'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:07:09'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:07:09'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:08:26'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:08:26'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:09:03'
+}
+{
+  message: 'New user registered: therapist_1758116343288@test.com (therapist)',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:09:03'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:09:03'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:09:21'
+}
+{
+  service: 'ayursutra-api',
+  stringValue: `"{ '$expr': '$deliveryPreferences.maxRetries' }"`,
+  messageFormat: undefined,
+  kind: 'Number',
+  value: { '$expr': '$deliveryPreferences.maxRetries' },
+  path: 'retryCount',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:378:12)
+      at SchemaNumber.handleSingle (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:389:15)
+      at SchemaNumber.castForQuery (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:430:20)
+      at cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast.js:366:39)
+      at Query.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4927:12)
+      at Query._castConditions (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2237:10)
+      at model.Query._find (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2263:8)
+      at model.Query.exec (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4447:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'Object',
+  model: Model { Notification },
+  level: 'error',
+  message: `Notification retry job error: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"`,
+  stack: `CastError: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"\n` +
+    '    at SchemaNumber.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:380:11)\n' +
+    '    at SchemaNumber.handleSingle (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:389:15)\n' +
+    '    at SchemaNumber.castForQuery (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:430:20)\n' +
+    '    at cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\cast.js:366:39)\n' +
+    '    at Query.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4927:12)\n' +
+    '    at Query._castConditions (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2237:10)\n' +
+    '    at model.Query._find (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2263:8)\n' +
+    '    at model.Query.exec (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4447:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async CJ.<anonymous> (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\backend\\services\\notificationService.js:418:36)',
+  timestamp: '2025-09-17 19:10:00'
+}
+{
+  service: 'ayursutra-api',
+  stringValue: `"{ '$expr': '$deliveryPreferences.maxRetries' }"`,
+  messageFormat: undefined,
+  kind: 'Number',
+  value: { '$expr': '$deliveryPreferences.maxRetries' },
+  path: 'retryCount',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:378:12)
+      at SchemaNumber.handleSingle (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:389:15)
+      at SchemaNumber.castForQuery (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:430:20)
+      at cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast.js:366:39)
+      at Query.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4927:12)
+      at Query._castConditions (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2237:10)
+      at model.Query._find (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2263:8)
+      at model.Query.exec (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4447:28)
+      at processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'Object',
+  model: Model { Notification },
+  level: 'error',
+  message: `Notification retry job error: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"`,
+  stack: `CastError: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"\n` +
+    '    at SchemaNumber.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:380:11)\n' +
+    '    at SchemaNumber.handleSingle (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:389:15)\n' +
+    '    at SchemaNumber.castForQuery (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:430:20)\n' +
+    '    at cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\cast.js:366:39)\n' +
+    '    at Query.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4927:12)\n' +
+    '    at Query._castConditions (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2237:10)\n' +
+    '    at model.Query._find (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2263:8)\n' +
+    '    at model.Query.exec (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4447:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at runNextTicks (node:internal/process/task_queues:69:3)',
+  timestamp: '2025-09-17 19:20:00'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:52:13'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:52:13'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:52:16'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 19:52:19'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:57:18'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:57:18'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 19:57:19'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 19:57:20'
+}
+{
+  service: 'ayursutra-api',
+  stringValue: `"{ '$expr': '$deliveryPreferences.maxRetries' }"`,
+  messageFormat: undefined,
+  kind: 'Number',
+  value: { '$expr': '$deliveryPreferences.maxRetries' },
+  path: 'retryCount',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:378:12)
+      at SchemaNumber.handleSingle (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:389:15)
+      at SchemaNumber.castForQuery (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:430:20)
+      at cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast.js:366:39)
+      at Query.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4927:12)
+      at Query._castConditions (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2237:10)
+      at model.Query._find (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2263:8)
+      at model.Query.exec (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4447:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'Object',
+  model: Model { Notification },
+  level: 'error',
+  message: `Notification retry job error: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"`,
+  stack: `CastError: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"\n` +
+    '    at SchemaNumber.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:380:11)\n' +
+    '    at SchemaNumber.handleSingle (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:389:15)\n' +
+    '    at SchemaNumber.castForQuery (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:430:20)\n' +
+    '    at cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\cast.js:366:39)\n' +
+    '    at Query.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4927:12)\n' +
+    '    at Query._castConditions (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2237:10)\n' +
+    '    at model.Query._find (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2263:8)\n' +
+    '    at model.Query.exec (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4447:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async CJ.<anonymous> (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\backend\\services\\notificationService.js:418:36)',
+  timestamp: '2025-09-17 20:00:00'
+}
+{
+  message: 'GET /favicon.ico - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:00:01'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:00:01'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:01:02'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:01:02'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:01:04'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:01:04'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:02:06'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:02:06'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:02:08'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:02:08'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:02:57'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:02:57'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:02:58'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:02:59'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:03:49'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:03:49'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:03:51'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:03:51'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:05:30'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:06:52'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:06:52'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:06:54'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:06:54'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:05'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:05'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:06'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:07:07'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:13'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:13'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:14'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:07:14'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:25'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:25'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:32'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:07:34'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:43'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:43'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:07:46'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:07:46'
+}
+{
+  service: 'ayursutra-api',
+  stringValue: `"{ '$expr': '$deliveryPreferences.maxRetries' }"`,
+  messageFormat: undefined,
+  kind: 'Number',
+  value: { '$expr': '$deliveryPreferences.maxRetries' },
+  path: 'retryCount',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:378:12)
+      at SchemaNumber.handleSingle (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:389:15)
+      at SchemaNumber.castForQuery (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:430:20)
+      at cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast.js:366:39)
+      at Query.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4927:12)
+      at Query._castConditions (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2237:10)
+      at model.Query._find (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2263:8)
+      at model.Query.exec (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4447:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'Object',
+  model: Model { Notification },
+  level: 'error',
+  message: `Notification retry job error: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"`,
+  stack: `CastError: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"\n` +
+    '    at SchemaNumber.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:380:11)\n' +
+    '    at SchemaNumber.handleSingle (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:389:15)\n' +
+    '    at SchemaNumber.castForQuery (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:430:20)\n' +
+    '    at cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\cast.js:366:39)\n' +
+    '    at Query.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4927:12)\n' +
+    '    at Query._castConditions (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2237:10)\n' +
+    '    at model.Query._find (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2263:8)\n' +
+    '    at model.Query.exec (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4447:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async CJ.<anonymous> (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\backend\\services\\notificationService.js:418:36)',
+  timestamp: '2025-09-17 20:10:00'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:03'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:18'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:19'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:28'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:28'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:32'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:32'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:32'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:33'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:11:33'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:11:35'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:12:59'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:12:59'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:02'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:13:02'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:10'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:10'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:10'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:13:11'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:17'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:17'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:19'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:13:19'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:30'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:30'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:32'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:13:32'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:33'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:35'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:38'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:38'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:38'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:39'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:13:39'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:41'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:44'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:44'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:45'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:13:46'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:55'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:55'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:13:56'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:13:57'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:01'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:01'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:02'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:14:03'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:11'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:11'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:12'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:14:12'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:17'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:17'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:18'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:14:18'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:24'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:24'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:25'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:14:26'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:31'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:31'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:32'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:14:33'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:45'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:45'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:46'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:14:47'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:52'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:52'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:53'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:14:54'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:14:59'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:00'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:01'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:15:01'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:06'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:06'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:07'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:15:08'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:12'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:12'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:13'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:15:14'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:19'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:19'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:20'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:15:21'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:30'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:30'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:15:31'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:15:32'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:16:38'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:16:38'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:16:39'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:16:39'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:16:47'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:16:47'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:16:48'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:16:49'
+}
+{
+  message: 'GET /favicon.ico - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:19:18'
+}
+{
+  message: 'GET /favicon.ico - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:19:18'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:19:18'
+}
+{
+  service: 'ayursutra-api',
+  stringValue: `"{ '$expr': '$deliveryPreferences.maxRetries' }"`,
+  messageFormat: undefined,
+  kind: 'Number',
+  value: { '$expr': '$deliveryPreferences.maxRetries' },
+  path: 'retryCount',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:378:12)
+      at SchemaNumber.handleSingle (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:389:15)
+      at SchemaNumber.castForQuery (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:430:20)
+      at cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast.js:366:39)
+      at Query.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4927:12)
+      at Query._castConditions (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2237:10)
+      at model.Query._find (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2263:8)
+      at model.Query.exec (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4447:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'Object',
+  model: Model { Notification },
+  level: 'error',
+  message: `Notification retry job error: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"`,
+  stack: `CastError: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"\n` +
+    '    at SchemaNumber.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:380:11)\n' +
+    '    at SchemaNumber.handleSingle (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:389:15)\n' +
+    '    at SchemaNumber.castForQuery (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:430:20)\n' +
+    '    at cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\cast.js:366:39)\n' +
+    '    at Query.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4927:12)\n' +
+    '    at Query._castConditions (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2237:10)\n' +
+    '    at model.Query._find (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2263:8)\n' +
+    '    at model.Query.exec (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4447:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async CJ.<anonymous> (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\backend\\services\\notificationService.js:418:36)',
+  timestamp: '2025-09-17 20:20:00'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:20:03'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:24:40'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:24:41'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:24:42'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:24:43'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:00'
+}
+{
+  message: 'New user registered: tejaswi11.naradasi@gmail.com (therapist)',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:01'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:01'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:01'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:08'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:14'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:15'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:17'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:22'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:26'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:31'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:36'
+}
+{
+  message: 'POST /api/auth/logout - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:37'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:39'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:39'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:40'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:25:41'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:45'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:45'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:25:48'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:25:49'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:26:15'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:26:40'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:26:56'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:26:56'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:26:56'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:26:57'
+}
