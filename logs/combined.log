@@ -1562,3 +1562,1583 @@
   message: 'Email service initialization failed:',
   timestamp: '2025-09-17 20:26:57'
 }
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:13'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:13'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:16'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:33:16'
+}
+{
+  message: 'GET /favicon.ico - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:45'
+}
+{
+  message: 'GET /manifest.json - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:45'
+}
+{
+  message: 'GET /favicon.ico - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:45'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:48'
+}
+{
+  message: 'User logged in: tejaswi11.naradasi@gmail.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:48'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:49'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:49'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:58'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:33:59'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:34:00'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:34:02'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:34:13'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:34:19'
+}
+{
+  message: 'POST /api/auth/logout - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:34:34'
+}
+{
+  service: 'ayursutra-api',
+  action: 'logout',
+  user: new ObjectId("68cacbc5bcf9f4e2c61376d0"),
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+  timestamp: '2025-09-17 20:34:35',
+  resource: '/api/auth/logout',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  message: 'User logged out: tejaswi11.naradasi@gmail.com',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:34:35'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:35:22'
+}
+{
+  message: 'New user registered: poojitha.naradasi@gmail.com (patient)',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:35:23'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:35:23'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:35:28'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:35:32'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:35:48'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:35:54'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:36:18'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:36:25'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:36:32'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:36:48'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:36:55'
+}
+{
+  service: 'ayursutra-api',
+  stringValue: `"{ '$expr': '$deliveryPreferences.maxRetries' }"`,
+  messageFormat: undefined,
+  kind: 'Number',
+  value: { '$expr': '$deliveryPreferences.maxRetries' },
+  path: 'retryCount',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:378:12)
+      at SchemaNumber.handleSingle (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:389:15)
+      at SchemaNumber.castForQuery (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:430:20)
+      at cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast.js:366:39)
+      at Query.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4927:12)
+      at Query._castConditions (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2237:10)
+      at model.Query._find (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2263:8)
+      at model.Query.exec (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4447:28)
+      at processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'Object',
+  model: Model { Notification },
+  level: 'error',
+  message: `Notification retry job error: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"`,
+  stack: `CastError: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"\n` +
+    '    at SchemaNumber.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:380:11)\n' +
+    '    at SchemaNumber.handleSingle (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:389:15)\n' +
+    '    at SchemaNumber.castForQuery (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:430:20)\n' +
+    '    at cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\cast.js:366:39)\n' +
+    '    at Query.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4927:12)\n' +
+    '    at Query._castConditions (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2237:10)\n' +
+    '    at model.Query._find (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2263:8)\n' +
+    '    at model.Query.exec (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4447:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at runNextTicks (node:internal/process/task_queues:69:3)',
+  timestamp: '2025-09-17 20:40:00'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:41:43'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:42:13'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:42:43'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:42:46'
+}
+{
+  message: 'POST /api/auth/logout - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:42:52'
+}
+{
+  service: 'ayursutra-api',
+  action: 'logout',
+  user: new ObjectId("68cace337d09014865dcca91"),
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+  timestamp: '2025-09-17 20:42:52',
+  resource: '/api/auth/logout',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  message: 'User logged out: poojitha.naradasi@gmail.com',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:42:52'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:42:58'
+}
+{
+  message: 'User logged in: tejaswi11.naradasi@gmail.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:42:58'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:42:59'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:42:59'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:43:09'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:43:19'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:43:29'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:43:30'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:43:40'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:43:51'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:43:59'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:44:01'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:44:05'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:44:15'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:44:27'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:44:29'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:44:37'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:44:47'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:44:58'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:45:00'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:45:08'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:45:19'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:45:30'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:45:30'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:45:40'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:49:34'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:49:34'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:49:41'
+}
+{
+  service: 'ayursutra-api',
+  stringValue: `"{ '$expr': '$deliveryPreferences.maxRetries' }"`,
+  messageFormat: undefined,
+  kind: 'Number',
+  value: { '$expr': '$deliveryPreferences.maxRetries' },
+  path: 'retryCount',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:378:12)
+      at SchemaNumber.handleSingle (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:389:15)
+      at SchemaNumber.castForQuery (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:430:20)
+      at cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast.js:366:39)
+      at Query.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4927:12)
+      at Query._castConditions (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2237:10)
+      at model.Query._find (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2263:8)
+      at model.Query.exec (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4447:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'Object',
+  model: Model { Notification },
+  level: 'error',
+  message: `Notification retry job error: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"`,
+  stack: `CastError: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"\n` +
+    '    at SchemaNumber.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:380:11)\n' +
+    '    at SchemaNumber.handleSingle (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:389:15)\n' +
+    '    at SchemaNumber.castForQuery (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:430:20)\n' +
+    '    at cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\cast.js:366:39)\n' +
+    '    at Query.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4927:12)\n' +
+    '    at Query._castConditions (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2237:10)\n' +
+    '    at model.Query._find (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2263:8)\n' +
+    '    at model.Query.exec (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4447:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async CJ.<anonymous> (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\backend\\services\\notificationService.js:418:36)',
+  timestamp: '2025-09-17 20:50:00'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:50:04'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:50:09'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:50:30'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:50:33'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:50:35'
+}
+{
+  message: 'GET /api/analytics/realtime - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:50:36'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:51:47'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:51:47'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-17 20:51:48'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-17 20:51:49'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:50:52'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:50:52'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:50:54'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-18 06:50:55'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:57:28'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:57:28'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:57:29'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-18 06:57:30'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:57:36'
+}
+{
+  message: 'POST /api/auth/register - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:57:37'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:58:56'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:58:56'
+}
+{
+  message: 'User logged in: admin@ayursutra.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:58:56'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:58:56'
+}
+{
+  message: 'GET /api/users - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:58:57'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:58:57'
+}
+{
+  message: 'GET /api/analytics/dashboard - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 06:58:57'
+}
+{
+  service: 'ayursutra-api',
+  stringValue: `"{ '$expr': '$deliveryPreferences.maxRetries' }"`,
+  messageFormat: undefined,
+  kind: 'Number',
+  value: { '$expr': '$deliveryPreferences.maxRetries' },
+  path: 'retryCount',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:378:12)
+      at SchemaNumber.handleSingle (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:389:15)
+      at SchemaNumber.castForQuery (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:430:20)
+      at cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast.js:366:39)
+      at Query.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4927:12)
+      at Query._castConditions (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2237:10)
+      at model.Query._find (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2263:8)
+      at model.Query.exec (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4447:28)
+      at processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'Object',
+  model: Model { Notification },
+  level: 'error',
+  message: `Notification retry job error: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"`,
+  stack: `CastError: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"\n` +
+    '    at SchemaNumber.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:380:11)\n' +
+    '    at SchemaNumber.handleSingle (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:389:15)\n' +
+    '    at SchemaNumber.castForQuery (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:430:20)\n' +
+    '    at cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\cast.js:366:39)\n' +
+    '    at Query.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4927:12)\n' +
+    '    at Query._castConditions (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2237:10)\n' +
+    '    at model.Query._find (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2263:8)\n' +
+    '    at model.Query.exec (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4447:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at runNextTicks (node:internal/process/task_queues:69:3)',
+  timestamp: '2025-09-18 07:00:00'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:32'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:32'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:32'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:32'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:32'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:33'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:33'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:33'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:33'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:54'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:54'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:55'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:55'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:55'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:55'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:55'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:55'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:01:56'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:02:08'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:02:08'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:02:09'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-18 07:02:09'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:06:44'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:06:44'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:06:45'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-18 07:06:46'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:06:59'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:00'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:00'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:01'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:01'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:02'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:02'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:03'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:03'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:11'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:11'
+}
+{
+  message: 'User logged in: admin@ayursutra.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:11'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:11'
+}
+{
+  message: 'GET /api/users - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:12'
+}
+{
+  message: 'POST /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:12'
+}
+{
+  service: 'ayursutra-api',
+  action: 'appointment_create',
+  user: new ObjectId("68cab5121f07b7910c04305f"),
+  ip: '::1',
+  userAgent: undefined,
+  timestamp: '2025-09-18 07:07:12',
+  resource: '/api/appointments',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  service: 'ayursutra-api',
+  errors: {
+    appointmentId: ValidatorError: Path `appointmentId` is required.
+        at validate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1365:13)
+        at SchemaType.doValidate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1349:7)
+        at C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\document.js:3004:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `appointmentId` is required.',
+        type: 'required',
+        path: 'appointmentId',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'appointmentId',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Appointment validation failed',
+  level: 'error',
+  message: 'Create appointment error: Appointment validation failed: appointmentId: Path `appointmentId` is required.',
+  stack: 'ValidationError: Appointment validation failed: appointmentId: Path `appointmentId` is required.\n' +
+    '    at Document.invalidate (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3219:32)\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3012:17\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schematype.js:1368:9\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)',
+  timestamp: '2025-09-18 07:07:12'
+}
+{
+  errors: {
+    appointmentId: ValidatorError: Path `appointmentId` is required.
+        at validate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1365:13)
+        at SchemaType.doValidate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1349:7)
+        at C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\document.js:3004:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `appointmentId` is required.',
+        type: 'required',
+        path: 'appointmentId',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'appointmentId',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Appointment validation failed',
+  level: 'error',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:12',
+  message: 'Appointment validation failed: appointmentId: Path `appointmentId` is required.',
+  stack: 'ValidationError: Appointment validation failed: appointmentId: Path `appointmentId` is required.\n' +
+    '    at Document.invalidate (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3219:32)\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3012:17\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schematype.js:1368:9\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:12'
+}
+{
+  message: 'GET /api/analytics/dashboard - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:07:12'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:04'
+}
+{
+  message: 'User logged in: admin@ayursutra.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:04'
+}
+{
+  message: 'GET /api/users - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:04'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:05'
+}
+{
+  message: 'POST /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:05'
+}
+{
+  service: 'ayursutra-api',
+  action: 'appointment_create',
+  user: new ObjectId("68cab5121f07b7910c04305f"),
+  ip: '::1',
+  userAgent: 'axios/1.12.2',
+  timestamp: '2025-09-18 07:08:05',
+  resource: '/api/appointments',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  message: 'POST /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:05'
+}
+{
+  service: 'ayursutra-api',
+  action: 'appointment_create',
+  user: new ObjectId("68cab5121f07b7910c04305f"),
+  ip: '::1',
+  userAgent: 'axios/1.12.2',
+  timestamp: '2025-09-18 07:08:05',
+  resource: '/api/appointments',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  message: 'POST /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:05'
+}
+{
+  service: 'ayursutra-api',
+  action: 'appointment_create',
+  user: new ObjectId("68cab5121f07b7910c04305f"),
+  ip: '::1',
+  userAgent: 'axios/1.12.2',
+  timestamp: '2025-09-18 07:08:05',
+  resource: '/api/appointments',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  message: 'GET /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:05'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:58'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:08:58'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:00'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-18 07:09:00'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:11'
+}
+{
+  message: 'User logged in: admin@ayursutra.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:11'
+}
+{
+  message: 'GET /api/users - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:11'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:11'
+}
+{
+  message: 'POST /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:12'
+}
+{
+  service: 'ayursutra-api',
+  action: 'appointment_create',
+  user: new ObjectId("68cab5121f07b7910c04305f"),
+  ip: '::1',
+  userAgent: 'axios/1.12.2',
+  timestamp: '2025-09-18 07:09:12',
+  resource: '/api/appointments',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  service: 'ayursutra-api',
+  errors: {
+    appointmentId: ValidatorError: Path `appointmentId` is required.
+        at validate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1365:13)
+        at SchemaType.doValidate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1349:7)
+        at C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\document.js:3004:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `appointmentId` is required.',
+        type: 'required',
+        path: 'appointmentId',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'appointmentId',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Appointment validation failed',
+  level: 'error',
+  message: 'Create appointment error: Appointment validation failed: appointmentId: Path `appointmentId` is required.',
+  stack: 'ValidationError: Appointment validation failed: appointmentId: Path `appointmentId` is required.\n' +
+    '    at Document.invalidate (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3219:32)\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3012:17\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schematype.js:1368:9\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)',
+  timestamp: '2025-09-18 07:09:12'
+}
+{
+  errors: {
+    appointmentId: ValidatorError: Path `appointmentId` is required.
+        at validate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1365:13)
+        at SchemaType.doValidate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1349:7)
+        at C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\document.js:3004:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `appointmentId` is required.',
+        type: 'required',
+        path: 'appointmentId',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'appointmentId',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Appointment validation failed',
+  level: 'error',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:12',
+  message: 'Appointment validation failed: appointmentId: Path `appointmentId` is required.',
+  stack: 'ValidationError: Appointment validation failed: appointmentId: Path `appointmentId` is required.\n' +
+    '    at Document.invalidate (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3219:32)\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3012:17\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schematype.js:1368:9\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)'
+}
+{
+  message: 'POST /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:12'
+}
+{
+  service: 'ayursutra-api',
+  action: 'appointment_create',
+  user: new ObjectId("68cab5121f07b7910c04305f"),
+  ip: '::1',
+  userAgent: 'axios/1.12.2',
+  timestamp: '2025-09-18 07:09:12',
+  resource: '/api/appointments',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  service: 'ayursutra-api',
+  errors: {
+    appointmentId: ValidatorError: Path `appointmentId` is required.
+        at validate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1365:13)
+        at SchemaType.doValidate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1349:7)
+        at C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\document.js:3004:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `appointmentId` is required.',
+        type: 'required',
+        path: 'appointmentId',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'appointmentId',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Appointment validation failed',
+  level: 'error',
+  message: 'Create appointment error: Appointment validation failed: appointmentId: Path `appointmentId` is required.',
+  stack: 'ValidationError: Appointment validation failed: appointmentId: Path `appointmentId` is required.\n' +
+    '    at Document.invalidate (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3219:32)\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3012:17\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schematype.js:1368:9\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)',
+  timestamp: '2025-09-18 07:09:12'
+}
+{
+  errors: {
+    appointmentId: ValidatorError: Path `appointmentId` is required.
+        at validate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1365:13)
+        at SchemaType.doValidate (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schematype.js:1349:7)
+        at C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\document.js:3004:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `appointmentId` is required.',
+        type: 'required',
+        path: 'appointmentId',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'appointmentId',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Appointment validation failed',
+  level: 'error',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:12',
+  message: 'Appointment validation failed: appointmentId: Path `appointmentId` is required.',
+  stack: 'ValidationError: Appointment validation failed: appointmentId: Path `appointmentId` is required.\n' +
+    '    at Document.invalidate (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3219:32)\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\document.js:3012:17\n' +
+    '    at C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schematype.js:1368:9\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)'
+}
+{
+  message: 'POST /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:12'
+}
+{
+  service: 'ayursutra-api',
+  action: 'appointment_create',
+  user: new ObjectId("68cab5121f07b7910c04305f"),
+  ip: '::1',
+  userAgent: 'axios/1.12.2',
+  timestamp: '2025-09-18 07:09:12',
+  resource: '/api/appointments',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  message: 'GET /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:13'
+}
+{
+  message: 'Notification cron jobs started successfully',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:33'
+}
+{
+  message: 'AyurSutra server running on port 5000 in development mode',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:33'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:34'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Email service initialization failed:',
+  timestamp: '2025-09-18 07:09:34'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:44'
+}
+{
+  message: 'User logged in: admin@ayursutra.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:45'
+}
+{
+  message: 'GET /api/users - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:45'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:45'
+}
+{
+  message: 'POST /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:46'
+}
+{
+  service: 'ayursutra-api',
+  action: 'appointment_create',
+  user: new ObjectId("68cab5121f07b7910c04305f"),
+  ip: '::1',
+  userAgent: 'axios/1.12.2',
+  timestamp: '2025-09-18 07:09:46',
+  resource: '/api/appointments',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  message: 'Appointment created: APT202509181XZAZ8 by admin@ayursutra.com',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:46'
+}
+{
+  message: 'GET /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:46'
+}
+{
+  message: 'GET /api/health - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:52'
+}
+{
+  message: 'POST /api/auth/login - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:52'
+}
+{
+  message: 'User logged in: admin@ayursutra.com from IP ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:52'
+}
+{
+  message: 'GET /api/therapies - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:52'
+}
+{
+  message: 'GET /api/users - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:53'
+}
+{
+  message: 'POST /api/appointments - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:53'
+}
+{
+  service: 'ayursutra-api',
+  action: 'appointment_create',
+  user: new ObjectId("68cab5121f07b7910c04305f"),
+  ip: '::1',
+  userAgent: undefined,
+  timestamp: '2025-09-18 07:09:53',
+  resource: '/api/appointments',
+  method: 'POST',
+  level: 'info',
+  message: 'User activity:'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Error getting availability for Fri Sep 19 2025 07:09:53 GMT+0530 (India Standard Time):',
+  timestamp: '2025-09-18 07:09:53'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Error getting availability for Mon Sep 22 2025 07:09:53 GMT+0530 (India Standard Time):',
+  timestamp: '2025-09-18 07:09:54'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Error getting availability for Tue Sep 23 2025 07:09:53 GMT+0530 (India Standard Time):',
+  timestamp: '2025-09-18 07:09:54'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Error getting availability for Wed Sep 24 2025 07:09:53 GMT+0530 (India Standard Time):',
+  timestamp: '2025-09-18 07:09:54'
+}
+{
+  service: 'ayursutra-api',
+  level: 'warn',
+  message: 'Error getting availability for Thu Sep 25 2025 07:09:53 GMT+0530 (India Standard Time):',
+  timestamp: '2025-09-18 07:09:54'
+}
+{
+  message: 'GET /api/notifications - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:54'
+}
+{
+  message: 'GET /api/analytics/dashboard - ::1',
+  level: 'info',
+  service: 'ayursutra-api',
+  timestamp: '2025-09-18 07:09:54'
+}
+{
+  service: 'ayursutra-api',
+  stringValue: `"{ '$expr': '$deliveryPreferences.maxRetries' }"`,
+  messageFormat: undefined,
+  kind: 'Number',
+  value: { '$expr': '$deliveryPreferences.maxRetries' },
+  path: 'retryCount',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:378:12)
+      at SchemaNumber.handleSingle (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:389:15)
+      at SchemaNumber.castForQuery (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\schema\number.js:430:20)
+      at cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\cast.js:366:39)
+      at Query.cast (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4927:12)
+      at Query._castConditions (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2237:10)
+      at model.Query._find (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:2263:8)
+      at model.Query.exec (C:\Users\tejas\OneDrive\Desktop\SIH\AyurSutra\node_modules\mongoose\lib\query.js:4447:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'Object',
+  model: Model { Notification },
+  level: 'error',
+  message: `Notification retry job error: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"`,
+  stack: `CastError: Cast to Number failed for value "{ '$expr': '$deliveryPreferences.maxRetries' }" (type Object) at path "retryCount" for model "Notification"\n` +
+    '    at SchemaNumber.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:380:11)\n' +
+    '    at SchemaNumber.handleSingle (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:389:15)\n' +
+    '    at SchemaNumber.castForQuery (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\schema\\number.js:430:20)\n' +
+    '    at cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\cast.js:366:39)\n' +
+    '    at Query.cast (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4927:12)\n' +
+    '    at Query._castConditions (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2237:10)\n' +
+    '    at model.Query._find (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:2263:8)\n' +
+    '    at model.Query.exec (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\node_modules\\mongoose\\lib\\query.js:4447:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async CJ.<anonymous> (C:\\Users\\tejas\\OneDrive\\Desktop\\SIH\\AyurSutra\\backend\\services\\notificationService.js:418:36)',
+  timestamp: '2025-09-18 07:10:00'
+}

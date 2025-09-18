@@ -5,7 +5,7 @@ const appointmentSchema = new mongoose.Schema({
   appointmentId: {
     type: String,
     unique: true,
-    required: true
+    required: false
   },
   
   // Participants

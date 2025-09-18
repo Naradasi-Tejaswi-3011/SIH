@@ -532,12 +532,236 @@ const validatePagination = (data) => {
   return schema.validate(data);
 };
 
+// User update validation
+const validateUserUpdate = (data) => {
+  const schema = Joi.object({
+    firstName: Joi.string()
+      .trim()
+      .min(2)
+      .max(50)
+      .optional(),
+    
+    lastName: Joi.string()
+      .trim()
+      .min(2)
+      .max(50)
+      .optional(),
+    
+    phone: Joi.string()
+      .pattern(/^\+?[\d\s-()]+$/)
+      .optional(),
+    
+    address: Joi.object({
+      street: Joi.string().max(100),
+      city: Joi.string().max(50),
+      state: Joi.string().max(50),
+      postalCode: Joi.string().max(20),
+      country: Joi.string().max(50)
+    }).optional(),
+    
+    medicalHistory: Joi.object({
+      allergies: Joi.array().items(Joi.string()),
+      currentMedications: Joi.array().items(Joi.string()),
+      chronicConditions: Joi.array().items(Joi.string()),
+      previousSurgeries: Joi.array().items(Joi.string()),
+      emergencyContact: Joi.object({
+        name: Joi.string().max(100),
+        relationship: Joi.string().max(50),
+        phone: Joi.string().pattern(/^\+?[\d\s-()]+$/)
+      })
+    }).optional(),
+    
+    professionalInfo: Joi.object({
+      licenseNumber: Joi.string().max(50),
+      specialization: Joi.array().items(Joi.string()),
+      experience: Joi.number().min(0).max(50),
+      qualifications: Joi.array().items(Joi.string()),
+      availability: Joi.array().items(Joi.object({
+        dayOfWeek: Joi.number().min(0).max(6),
+        startTime: Joi.string().pattern(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/),
+        endTime: Joi.string().pattern(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/),
+        isAvailable: Joi.boolean().default(true)
+      })),
+      consultationFee: Joi.number().min(0),
+      languages: Joi.array().items(Joi.string())
+    }).optional(),
+    
+    notificationPreferences: Joi.object({
+      email: Joi.object({
+        appointments: Joi.boolean(),
+        reminders: Joi.boolean(),
+        updates: Joi.boolean()
+      }),
+      sms: Joi.object({
+        appointments: Joi.boolean(),
+        reminders: Joi.boolean(),
+        updates: Joi.boolean()
+      }),
+      push: Joi.object({
+        appointments: Joi.boolean(),
+        reminders: Joi.boolean(),
+        updates: Joi.boolean()
+      })
+    }).optional(),
+    
+    // Admin only fields
+    isActive: Joi.boolean().optional(),
+    role: Joi.string().valid('patient', 'doctor', 'therapist', 'admin').optional()
+  });
+
+  return schema.validate(data);
+};
+
+// Therapy update validation (more lenient than create)
+const validateTherapyUpdate = (data) => {
+  const schema = Joi.object({
+    name: Joi.string()
+      .trim()
+      .min(2)
+      .max(200)
+      .optional(),
+    
+    sanskritName: Joi.string()
+      .trim()
+      .min(2)
+      .max(200)
+      .optional(),
+    
+    category: Joi.string()
+      .valid('shodhana', 'shamana', 'rasayana', 'satvavajaya', 'daivavyapashraya')
+      .optional(),
+    
+    description: Joi.string()
+      .min(10)
+      .max(2000)
+      .optional(),
+    
+    benefits: Joi.array().items(Joi.string().max(200)),
+    indications: Joi.array().items(Joi.string().max(200)),
+    contraindications: Joi.array().items(Joi.string().max(200)),
+    
+    duration: Joi.object({
+      perSession: Joi.number().min(15).max(480),
+      totalCourse: Joi.number().min(1).max(100),
+      frequency: Joi.string().valid('daily', 'alternate_days', 'weekly', 'bi_weekly')
+    }).optional(),
+    
+    pricing: Joi.object({
+      basePrice: Joi.number().min(0),
+      currency: Joi.string().valid('INR', 'USD', 'EUR', 'GBP'),
+      packageDiscount: Joi.number().min(0).max(100)
+    }).optional(),
+    
+    requirements: Joi.object({
+      room: Joi.object({
+        type: Joi.string().valid('standard', 'specialized', 'steam_room', 'oil_room'),
+        temperature: Joi.object({
+          min: Joi.number().min(-10).max(50),
+          max: Joi.number().min(-10).max(50)
+        }),
+        humidity: Joi.object({
+          min: Joi.number().min(0).max(100),
+          max: Joi.number().min(0).max(100)
+        })
+      }),
+      equipment: Joi.array().items(Joi.string().max(100)),
+      materials: Joi.array().items(Joi.object({
+        name: Joi.string().required(),
+        quantity: Joi.number().min(0),
+        unit: Joi.string().max(20),
+        cost: Joi.number().min(0)
+      })),
+      staffRequired: Joi.object({
+        therapists: Joi.number().min(1),
+        assistants: Joi.number().min(0),
+        specialization: Joi.array().items(Joi.string())
+      })
+    }).optional(),
+    
+    scheduling: Joi.object({
+      preferredTimeSlots: Joi.array().items(Joi.string()),
+      seasonalPreferences: Joi.array().items(Joi.string()),
+      minRestBetweenSessions: Joi.number().min(0),
+      maxSessionsPerDay: Joi.number().min(1)
+    }).optional(),
+    
+    safety: Joi.object({
+      contraindications: Joi.array().items(Joi.string()),
+      sideEffects: Joi.array().items(Joi.string()),
+      precautions: Joi.array().items(Joi.string())
+    }).optional(),
+    
+    isActive: Joi.boolean().optional(),
+    isAvailable: Joi.boolean().optional()
+  });
+
+  return schema.validate(data);
+};
+
+// Simplified feedback validation for new API structure
+const validateSimpleFeedback = (data) => {
+  const schema = Joi.object({
+    appointment: Joi.string()
+      .pattern(/^[0-9a-fA-F]{24}$/)
+      .required(),
+    
+    rating: Joi.number()
+      .min(1)
+      .max(5)
+      .required(),
+    
+    comment: Joi.string()
+      .min(10)
+      .max(2000)
+      .optional(),
+    
+    type: Joi.string()
+      .valid('general', 'therapy', 'service', 'staff', 'facility')
+      .default('general'),
+    
+    categories: Joi.array()
+      .items(Joi.string().max(100))
+      .default(['general']),
+    
+    tags: Joi.array()
+      .items(Joi.string().max(50))
+      .optional(),
+    
+    isAnonymous: Joi.boolean().default(false)
+  });
+
+  return schema.validate(data);
+};
+
+// Feedback response validation
+const validateFeedbackResponse = (data) => {
+  const schema = Joi.object({
+    response: Joi.string()
+      .min(10)
+      .max(1000)
+      .required()
+      .messages({
+        'string.min': 'Response must be at least 10 characters',
+        'string.max': 'Response cannot exceed 1000 characters',
+        'any.required': 'Response text is required'
+      }),
+    
+    isPublic: Joi.boolean().default(true)
+  });
+
+  return schema.validate(data);
+};
+
 module.exports = {
   validateRegistration,
   validateLogin,
   validateAppointment,
   validateTherapy,
+  validateTherapyUpdate,
+  validateUserUpdate,
   validateFeedback,
+  validateSimpleFeedback,
+  validateFeedbackResponse,
   validateNotification,
   validateObjectId,
   validatePagination

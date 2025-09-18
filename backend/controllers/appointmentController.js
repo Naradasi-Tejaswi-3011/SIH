@@ -115,7 +115,24 @@ const getAppointment = async (req, res, next) => {
 // @access  Private
 const createAppointment = async (req, res, next) => {
   try {
-    const { error } = validateAppointment(req.body);
+    const { patient, doctor, therapist, therapy, scheduledDateTime, notes } = req.body;
+    
+    // First get therapy data to set estimatedDuration if not provided
+    const therapyData = await Therapy.findById(therapy);
+    if (!therapyData) {
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid therapy specified'
+      });
+    }
+    
+    // Add estimated duration from therapy if not provided
+    const appointmentData = {
+      ...req.body,
+      estimatedDuration: req.body.estimatedDuration || therapyData.duration.perSession
+    };
+    
+    const { error } = validateAppointment(appointmentData);
     if (error) {
       return res.status(400).json({
         success: false,
@@ -123,20 +140,17 @@ const createAppointment = async (req, res, next) => {
       });
     }
     
-    const { patient, doctor, therapist, therapy, scheduledDateTime, notes } = req.body;
-    
     // Verify all participants exist and have correct roles
-    const [patientUser, doctorUser, therapistUser, therapyData] = await Promise.all([
+    const [patientUser, doctorUser, therapistUser] = await Promise.all([
       User.findOne({ _id: patient, role: 'patient' }),
       User.findOne({ _id: doctor, role: 'doctor' }),
-      User.findOne({ _id: therapist, role: 'therapist' }),
-      Therapy.findById(therapy)
+      User.findOne({ _id: therapist, role: 'therapist' })
     ]);
     
-    if (!patientUser || !doctorUser || !therapistUser || !therapyData) {
+    if (!patientUser || !doctorUser || !therapistUser) {
       return res.status(400).json({
         success: false,
-        message: 'Invalid participant or therapy specified'
+        message: 'Invalid participant specified'
       });
     }
     
