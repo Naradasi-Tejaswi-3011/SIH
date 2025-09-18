@@ -23,18 +23,27 @@ import {
   SelfImprovement,
 } from '@mui/icons-material';
 import { motion } from 'framer-motion';
-import { format, addDays } from 'date-fns';
+import { format, addDays, isSameDay, isToday, isTomorrow } from 'date-fns';
+import { useQuery, useMutation, useQueryClient } from 'react-query';
+import toast from 'react-hot-toast';
 
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../hooks/useAuth';
+import { apiService } from '../services/apiService';
 
-const steps = ['Select Therapy', 'Choose Date & Time', 'Confirm Booking'];
+const steps = ['Select Therapy', 'Choose Date & Time', 'Select Therapist', 'Confirm Booking'];
 
 const AppointmentBooking = () => {
+  const { user } = useAuth();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const [activeStep, setActiveStep] = useState(0);
   const [selectedTherapy, setSelectedTherapy] = useState(null);
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedTime, setSelectedTime] = useState('');
+  const [selectedTherapist, setSelectedTherapist] = useState(null);
+  const [availableSlots, setAvailableSlots] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);

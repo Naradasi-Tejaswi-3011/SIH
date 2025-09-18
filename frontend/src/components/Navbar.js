@@ -1,43 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   AppBar,
   Toolbar,
   Typography,
   Button,
+  Box,
   IconButton,
-  Avatar,
+  Badge,
   Menu,
   MenuItem,
-  Box,
-  Badge,
-  Drawer,
-  List,
-  ListItem,
-  ListItemButton,
+  Avatar,
+  Divider,
   ListItemIcon,
   ListItemText,
-  Divider,
-  useMediaQuery,
+  Chip,
+  Drawer,
+  List,
+  ListItemButton,
   useTheme,
+  useMediaQuery,
 } from '@mui/material';
 import {
   Menu as MenuIcon,
   Notifications,
   AccountCircle,
+  Settings,
+  Logout,
   Dashboard,
   CalendarToday,
-  Assessment,
+  SelfImprovement,
+  Analytics,
   People,
   LocalHospital,
-  Settings,
-  ExitToApp,
-  SelfImprovement,
-  Psychology,
-  MonitorHeart,
+  Feedback,
+  AdminPanelSettings,
 } from '@mui/icons-material';
-import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
-import { useQuery } from 'react-query';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useSocket } from '../hooks/useSocket';
 import { apiService } from '../services/apiService';
 
 const Navbar = () => {
@@ -46,267 +47,438 @@ const Navbar = () => {
   const location = useLocation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
+  
   const [anchorEl, setAnchorEl] = useState(null);
-  const [mobileOpen, setMobileOpen] = useState(false);
-
-  // Fetch unread notifications
-  const { data: notifications } = useQuery(
-    ['notifications'],
-    () => apiService.getNotifications({ unreadOnly: true, limit: 5 }),
-    { refetchInterval: 30000 }
-  );
-
-  const unreadCount = notifications?.data?.unreadCount || 0;
-
+  const [notificationAnchor, setNotificationAnchor] = useState(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [notifications, setNotifications] = useState([]);
+  const [unreadCount, setUnreadCount] = useState(0);
+  
+  // Socket connection for real-time notifications
+  const socket = useSocket();
+  
+  useEffect(() => {
+    if (socket) {
+      socket.on('new_notification', (notification) => {
+        setNotifications(prev => [notification, ...prev]);
+        setUnreadCount(prev => prev + 1);
+      });
+      
+      socket.on('notification_read', ({ notificationId }) => {
+        setNotifications(prev => 
+          prev.map(n => 
+            n._id === notificationId 
+              ? { ...n, channels: { ...n.channels, inApp: { ...n.channels.inApp, status: 'read' } } }
+              : n
+          )
+        );
+      });
+      
+      return () => {
+        socket.off('new_notification');
+        socket.off('notification_read');
+      };
+    }
+  }, [socket]);
+  
+  // Load notifications on mount
+  useEffect(() => {
+    const loadNotifications = async () => {
+      try {
+        const response = await apiService.getNotifications({ limit: 10, unreadOnly: false });
+        setNotifications(response.data.data || []);
+        const unread = response.data.data?.filter(n => 
+          n.channels?.inApp?.status !== 'read'
+        ).length || 0;
+        setUnreadCount(unread);
+      } catch (error) {
+        console.error('Failed to load notifications:', error);
+      }
+    };
+    
+    if (user) {
+      loadNotifications();
+    }
+  }, [user]);
+  
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
-  const handleProfileMenuClose = () => {
+  
+  const handleNotificationMenuOpen = (event) => {
+    setNotificationAnchor(event.currentTarget);
+  };
+  
+  const handleMenuClose = () => {
     setAnchorEl(null);
+    setNotificationAnchor(null);
   };
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-
+  
   const handleLogout = async () => {
-    handleProfileMenuClose();
     await logout();
+    navigate('/login');
+    handleMenuClose();
   };
-
-  // Role-based navigation items
+  
+  const markNotificationAsRead = async (notificationId) => {
+    try {
+      await apiService.markNotificationAsRead(notificationId);
+      setUnreadCount(prev => Math.max(0, prev - 1));
+    } catch (error) {
+      console.error('Failed to mark notification as read:', error);
+    }
+  };
+  
   const getNavigationItems = () => {
     const baseItems = [
-      {
-        text: 'Dashboard',
-        icon: <Dashboard />,
-        path: '/',
-        roles: ['patient', 'therapist', 'doctor', 'admin']
+      { 
+        text: 'Dashboard', 
+        icon: Dashboard, 
+        path: user?.role === 'patient' ? '/patient/dashboard' : 
+              user?.role === 'therapist' ? '/therapist/dashboard' : '/admin/dashboard' 
       },
+      { text: 'Analytics', icon: Analytics, path: '/analytics' },
     ];
-
+    
     const roleSpecificItems = {
       patient: [
-        { text: 'Book Appointment', icon: <CalendarToday />, path: '/appointments/book' },
-        { text: 'My Progress', icon: <Assessment />, path: '/analytics' },
-        { text: 'AI Recommendations', icon: <Psychology />, path: '/recommendations' },
+        { text: 'Book Appointment', icon: CalendarToday, path: '/appointments/book' },
+        { text: 'My Therapies', icon: SelfImprovement, path: '/patient/therapies' },
+        { text: 'Feedback', icon: Feedback, path: '/feedback' },
+        { text: 'Notifications', icon: Notifications, path: '/notifications' },
       ],
       therapist: [
-        { text: 'Live Sessions', icon: <MonitorHeart />, path: '/sessions/live' },
-        { text: 'My Schedule', icon: <CalendarToday />, path: '/schedule' },
-        { text: 'Patient Records', icon: <People />, path: '/patients' },
-        { text: 'Performance', icon: <Assessment />, path: '/analytics' },
+        { text: 'My Appointments', icon: CalendarToday, path: '/therapist/appointments' },
+        { text: 'Track Sessions', icon: SelfImprovement, path: '/therapist/sessions' },
+        { text: 'Therapy Management', icon: LocalHospital, path: '/therapy/manage' },
+        { text: 'Data Visualization', icon: Analytics, path: '/data-visualization' },
+        { text: 'Feedback', icon: Feedback, path: '/feedback' },
+        { text: 'Notifications', icon: Notifications, path: '/notifications' },
       ],
       doctor: [
-        { text: 'Patients', icon: <People />, path: '/patients' },
-        { text: 'Therapies', icon: <LocalHospital />, path: '/therapies' },
-        { text: 'Analytics', icon: <Assessment />, path: '/analytics' },
+        { text: 'Patients', icon: People, path: '/doctor/patients' },
+        { text: 'Therapies', icon: LocalHospital, path: '/doctor/therapies' },
+        { text: 'Appointments', icon: CalendarToday, path: '/doctor/appointments' },
+        { text: 'Feedback', icon: Feedback, path: '/feedback' },
+        { text: 'Notifications', icon: Notifications, path: '/notifications' },
       ],
       admin: [
-        { text: 'System Monitor', icon: <MonitorHeart />, path: '/admin/monitor' },
-        { text: 'Users', icon: <People />, path: '/admin/users' },
-        { text: 'Therapies', icon: <LocalHospital />, path: '/admin/therapies' },
-        { text: 'Analytics', icon: <Assessment />, path: '/admin/analytics' },
+        { text: 'Users', icon: People, path: '/admin/users' },
+        { text: 'Therapy Management', icon: LocalHospital, path: '/therapy/manage' },
+        { text: 'Data Visualization', icon: Analytics, path: '/data-visualization' },
+        { text: 'Appointments', icon: CalendarToday, path: '/admin/appointments' },
+        { text: 'Feedback', icon: Feedback, path: '/feedback' },
+        { text: 'Notifications', icon: Notifications, path: '/notifications' },
+        { text: 'System', icon: AdminPanelSettings, path: '/admin/system' },
       ],
     };
-
+    
     return [...baseItems, ...(roleSpecificItems[user?.role] || [])];
   };
-
+  
   const navigationItems = getNavigationItems();
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2, color: 'white' }}>
-        🧘‍♀️ AyurSutra
-      </Typography>
-      <Divider />
-      <List>
-        {navigationItems.map((item) => (
-          <ListItem key={item.text} disablePadding>
+  
+  const getRoleColor = (role) => {
+    const colors = {
+      patient: theme.palette.success.main,
+      therapist: theme.palette.secondary.main,
+      doctor: theme.palette.info.main,
+      admin: theme.palette.warning.main,
+    };
+    return colors[role] || theme.palette.primary.main;
+  };
+  
+  const DrawerContent = () => (
+    <Box sx={{ width: 250, mt: 2 }}>
+      <Box sx={{ p: 2, textAlign: 'center', color: 'white' }}>
+        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+          🧘‍♀️ AyurSutra
+        </Typography>
+        <Typography variant="caption" sx={{ opacity: 0.8 }}>
+          Smart Panchakarma Management
+        </Typography>
+      </Box>
+      
+      <Divider sx={{ backgroundColor: 'rgba(255,255,255,0.2)', mx: 2 }} />
+      
+      <List sx={{ mt: 2 }}>
+        {navigationItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = location.pathname === item.path;
+          
+          return (
             <ListItemButton
-              onClick={() => navigate(item.path)}
-              selected={location.pathname === item.path}
+              key={item.text}
+              selected={isActive}
+              onClick={() => {
+                navigate(item.path);
+                setDrawerOpen(false);
+              }}
               sx={{
                 color: 'white',
                 '&.Mui-selected': {
                   backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                  '&:hover': {
+                    backgroundColor: 'rgba(255, 255, 255, 0.25)',
+                  },
                 },
               }}
             >
-              <ListItemIcon sx={{ color: 'white' }}>
-                {item.icon}
+              <ListItemIcon sx={{ color: 'white', minWidth: 40 }}>
+                <Icon />
               </ListItemIcon>
               <ListItemText primary={item.text} />
             </ListItemButton>
-          </ListItem>
-        ))}
+          );
+        })}
       </List>
     </Box>
   );
-
-  const profileMenuId = 'primary-account-menu';
-  const profileMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: 'bottom',
-        horizontal: 'right',
-      }}
-      id={profileMenuId}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      open={Boolean(anchorEl)}
-      onClose={handleProfileMenuClose}
-    >
-      <MenuItem onClick={() => { navigate('/profile'); handleProfileMenuClose(); }}>
-        <AccountCircle sx={{ mr: 1 }} />
-        Profile
-      </MenuItem>
-      <MenuItem onClick={() => { navigate('/settings'); handleProfileMenuClose(); }}>
-        <Settings sx={{ mr: 1 }} />
-        Settings
-      </MenuItem>
-      <Divider />
-      <MenuItem onClick={handleLogout}>
-        <ExitToApp sx={{ mr: 1 }} />
-        Logout
-      </MenuItem>
-    </Menu>
-  );
-
+  
+  if (!user) return null;
+  
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="sticky" elevation={2}>
+    <>
+      <AppBar position="sticky" elevation={1}>
         <Toolbar>
           {/* Mobile menu button */}
           {isMobile && (
             <IconButton
-              color="inherit"
-              aria-label="open drawer"
               edge="start"
-              onClick={handleDrawerToggle}
+              color="inherit"
+              onClick={() => setDrawerOpen(true)}
               sx={{ mr: 2 }}
             >
               <MenuIcon />
             </IconButton>
           )}
-
+          
           {/* Logo */}
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ 
-              flexGrow: isMobile ? 1 : 0, 
-              mr: 2,
-              cursor: 'pointer',
-              fontWeight: 600
-            }}
-            onClick={() => navigate('/')}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
           >
-            🧘‍♀️ AyurSutra
-          </Typography>
-
-          {/* Desktop navigation */}
+            <Typography 
+              variant="h6" 
+              component="div" 
+              sx={{ 
+                flexGrow: isMobile ? 1 : 0,
+                fontWeight: 'bold',
+                color: theme.palette.primary.main,
+                cursor: 'pointer'
+              }}
+              onClick={() => navigate('/')}
+            >
+              🧘‍♀️ AyurSutra
+            </Typography>
+          </motion.div>
+          
+          {/* Desktop Navigation */}
           {!isMobile && (
-            <Box sx={{ flexGrow: 1, display: 'flex', ml: 3 }}>
-              {navigationItems.map((item) => (
-                <Button
-                  key={item.text}
-                  onClick={() => navigate(item.path)}
-                  sx={{
-                    color: 'inherit',
-                    mx: 1,
-                    backgroundColor: location.pathname === item.path ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
-                    '&:hover': {
-                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    },
-                  }}
-                  startIcon={item.icon}
-                >
-                  {item.text}
-                </Button>
-              ))}
+            <Box sx={{ flexGrow: 1, ml: 4 }}>
+              {navigationItems.map((item) => {
+                const Icon = item.icon;
+                const isActive = location.pathname === item.path;
+                
+                return (
+                  <Button
+                    key={item.text}
+                    startIcon={<Icon />}
+                    onClick={() => navigate(item.path)}
+                    sx={{
+                      color: isActive ? theme.palette.primary.main : 'text.primary',
+                      fontWeight: isActive ? 600 : 400,
+                      mx: 1,
+                      '&:hover': {
+                        backgroundColor: 'rgba(46, 139, 87, 0.1)',
+                      },
+                    }}
+                  >
+                    {item.text}
+                  </Button>
+                );
+              })}
             </Box>
           )}
-
-          {/* Right side items */}
+          
+          <Box sx={{ flexGrow: isMobile ? 0 : 1 }} />
+          
+          {/* Right side actions */}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-            {/* Role badge */}
-            <Box
+            {/* Role chip */}
+            <Chip
+              label={user.role.charAt(0).toUpperCase() + user.role.slice(1)}
+              size="small"
               sx={{
-                px: 1,
-                py: 0.5,
-                backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                borderRadius: 1,
-                fontSize: '0.75rem',
-                fontWeight: 500,
-                textTransform: 'capitalize',
-                display: { xs: 'none', sm: 'block' }
+                backgroundColor: getRoleColor(user.role),
+                color: 'white',
+                fontWeight: 600,
+                display: { xs: 'none', sm: 'inline-flex' }
               }}
-            >
-              {user?.role}
-            </Box>
-
+            />
+            
             {/* Notifications */}
             <IconButton
-              size="large"
               color="inherit"
-              onClick={() => navigate('/notifications')}
+              onClick={handleNotificationMenuOpen}
             >
               <Badge badgeContent={unreadCount} color="error">
                 <Notifications />
               </Badge>
             </IconButton>
-
-            {/* User profile */}
+            
+            {/* Profile Menu */}
             <IconButton
-              size="large"
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={profileMenuId}
-              aria-haspopup="true"
               onClick={handleProfileMenuOpen}
-              color="inherit"
+              sx={{ ml: 1 }}
             >
               <Avatar
-                sx={{ width: 32, height: 32, bgcolor: 'secondary.main' }}
-                alt={user?.firstName}
+                sx={{
+                  width: 32,
+                  height: 32,
+                  backgroundColor: getRoleColor(user.role)
+                }}
               >
-                {user?.firstName?.[0]?.toUpperCase()}
+                {user.firstName?.charAt(0)}{user.lastName?.charAt(0)}
               </Avatar>
             </IconButton>
           </Box>
         </Toolbar>
       </AppBar>
-
-      {/* Mobile drawer */}
+      
+      {/* Mobile Drawer */}
       <Drawer
-        variant="temporary"
-        open={mobileOpen}
-        onClose={handleDrawerToggle}
-        ModalProps={{
-          keepMounted: true, // Better open performance on mobile.
-        }}
-        sx={{
-          display: { xs: 'block', md: 'none' },
-          '& .MuiDrawer-paper': {
-            boxSizing: 'border-box',
-            width: 240,
+        anchor="left"
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+        PaperProps={{
+          sx: {
             backgroundColor: theme.palette.primary.main,
-          },
+            color: 'white',
+          }
         }}
       >
-        {drawer}
+        <DrawerContent />
       </Drawer>
-
-      {profileMenu}
-    </Box>
+      
+      {/* Profile Menu */}
+      <Menu
+        anchorEl={anchorEl}
+        open={Boolean(anchorEl)}
+        onClose={handleMenuClose}
+        onClick={handleMenuClose}
+        transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+        anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+        PaperProps={{
+          sx: { mt: 1, minWidth: 200 }
+        }}
+      >
+        <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
+          <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+            {user.firstName} {user.lastName}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {user.email}
+          </Typography>
+        </Box>
+        
+        <MenuItem onClick={() => navigate('/profile')}>
+          <ListItemIcon><AccountCircle /></ListItemIcon>
+          <ListItemText>Profile</ListItemText>
+        </MenuItem>
+        
+        <MenuItem onClick={() => navigate('/settings')}>
+          <ListItemIcon><Settings /></ListItemIcon>
+          <ListItemText>Settings</ListItemText>
+        </MenuItem>
+        
+        <Divider />
+        
+        <MenuItem onClick={handleLogout} sx={{ color: 'error.main' }}>
+          <ListItemIcon sx={{ color: 'error.main' }}><Logout /></ListItemIcon>
+          <ListItemText>Logout</ListItemText>
+        </MenuItem>
+      </Menu>
+      
+      {/* Notifications Menu */}
+      <Menu
+        anchorEl={notificationAnchor}
+        open={Boolean(notificationAnchor)}
+        onClose={handleMenuClose}
+        transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+        anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+        PaperProps={{
+          sx: { mt: 1, maxWidth: 400, minWidth: 300, maxHeight: 400 }
+        }}
+      >
+        <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
+          <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+            Notifications
+          </Typography>
+          {unreadCount > 0 && (
+            <Typography variant="body2" color="text.secondary">
+              {unreadCount} unread
+            </Typography>
+          )}
+        </Box>
+        
+        {notifications.length === 0 ? (
+          <Box sx={{ p: 3, textAlign: 'center' }}>
+            <Typography variant="body2" color="text.secondary">
+              No notifications
+            </Typography>
+          </Box>
+        ) : (
+          notifications.slice(0, 5).map((notification) => {
+            const isRead = notification.channels?.inApp?.status === 'read';
+            
+            return (
+              <MenuItem
+                key={notification._id}
+                onClick={() => {
+                  if (!isRead) {
+                    markNotificationAsRead(notification._id);
+                  }
+                  handleMenuClose();
+                }}
+                sx={{
+                  backgroundColor: isRead ? 'transparent' : 'action.hover',
+                  flexDirection: 'column',
+                  alignItems: 'flex-start',
+                  whiteSpace: 'normal',
+                  py: 1.5,
+                }}
+              >
+                <Typography variant="subtitle2" sx={{ fontWeight: isRead ? 400 : 600 }}>
+                  {notification.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
+                  {notification.message}
+                </Typography>
+                <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5 }}>
+                  {new Date(notification.createdAt).toLocaleDateString()}
+                </Typography>
+              </MenuItem>
+            );
+          })
+        )}
+        
+        {notifications.length > 5 && (
+          <>
+            <Divider />
+            <MenuItem onClick={() => {
+              navigate('/notifications');
+              handleMenuClose();
+            }}>
+              <Typography variant="body2" color="primary" sx={{ textAlign: 'center', width: '100%' }}>
+                View all notifications
+              </Typography>
+            </MenuItem>
+          </>
+        )}
+      </Menu>
+    </>
   );
 };
 

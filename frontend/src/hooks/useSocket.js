@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext, createContext } from 'react';
 import { io } from 'socket.io-client';
 import { useAuth } from './useAuth';
 
 const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'http://localhost:5000';
 
-export const useSocket = () => {
+const SocketContext = createContext();
+
+export const SocketProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
   const { user, isAuthenticated } = useAuth();
 
@@ -59,5 +61,14 @@ export const useSocket = () => {
     }
   }, [isAuthenticated, user?.id]);
 
+  return (
+    <SocketContext.Provider value={socket}>
+      {children}
+    </SocketContext.Provider>
+  );
+};
+
+export const useSocket = () => {
+  const socket = useContext(SocketContext);
   return socket;
 };

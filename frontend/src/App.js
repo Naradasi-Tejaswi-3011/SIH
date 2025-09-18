@@ -10,6 +10,7 @@ import theme from './utils/theme';
 
 // Auth Context
 import { AuthProvider, useAuth } from './hooks/useAuth';
+import { SocketProvider } from './hooks/useSocket';
 
 // Pages
 import LoginPage from './pages/LoginPage';
@@ -18,6 +19,10 @@ import TherapistDashboard from './pages/TherapistDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import AppointmentBooking from './pages/AppointmentBooking';
 import TherapyTracking from './pages/TherapyTracking';
+import TherapyManagement from './pages/TherapyManagement';
+import FeedbackSystem from './pages/FeedbackSystem';
+import NotificationCenter from './pages/NotificationCenter';
+import DataVisualization from './pages/DataVisualization';
 import ProgressAnalytics from './pages/ProgressAnalytics';
 
 // Components
@@ -109,6 +114,42 @@ function AppRoutes() {
             </ProtectedRoute>
           }
         />
+        
+        <Route
+          path="/therapy/manage"
+          element={
+            <ProtectedRoute allowedRoles={['admin', 'therapist']}>
+              <TherapyManagement />
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path="/feedback"
+          element={
+            <ProtectedRoute allowedRoles={['patient', 'therapist', 'admin']}>
+              <FeedbackSystem />
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path="/notifications"
+          element={
+            <ProtectedRoute allowedRoles={['patient', 'therapist', 'admin']}>
+              <NotificationCenter />
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path="/data-visualization"
+          element={
+            <ProtectedRoute allowedRoles={['admin', 'therapist']}>
+              <DataVisualization />
+            </ProtectedRoute>
+          }
+        />
 
         {/* Default Redirects */}
         <Route
@@ -138,21 +179,23 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <AuthProvider>
-          <Router>
-            <div className="App">
-              <AppRoutes />
-              <Toaster
-                position="top-right"
-                toastOptions={{
-                  duration: 3000,
-                  style: {
-                    background: '#363636',
-                    color: '#fff',
-                  },
-                }}
-              />
-            </div>
-          </Router>
+          <SocketProvider>
+            <Router>
+              <div className="App">
+                <AppRoutes />
+                <Toaster
+                  position="top-right"
+                  toastOptions={{
+                    duration: 3000,
+                    style: {
+                      background: '#363636',
+                      color: '#fff',
+                    },
+                  }}
+                />
+              </div>
+            </Router>
+          </SocketProvider>
         </AuthProvider>
       </ThemeProvider>
     </QueryClientProvider>
